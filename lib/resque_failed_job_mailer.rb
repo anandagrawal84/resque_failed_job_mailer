@@ -1,5 +1,5 @@
-require "resque_exception_mailer/version"
-require 'resque_exception_mailer/resque/failure/notifier'
+require "resque_failed_job_mailer/version"
+require 'resque_failed_job_mailer/resque/failure/notifier'
 require 'resque/failure/multiple'
 require 'resque/failure/redis'
 
