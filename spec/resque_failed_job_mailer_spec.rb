@@ -1,7 +1,10 @@
+require "resque_failed_job_mailer/version"
 require 'resque/server'
-require 'resque_failed_job_mailer/resque/failure/notifier'
-require 'resque_failed_job_mailer/mailer'
 require 'resque/failure/multiple'
+require 'resque/failure/redis'
+require 'action_mailer'
+require 'resque_failed_job_mailer/mailer'
+require 'resque_failed_job_mailer/resque/failure/notifier'
 
 describe Resque::Failure::Notifier do
 

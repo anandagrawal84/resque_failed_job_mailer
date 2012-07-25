@@ -1,6 +1,7 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
 require "resque_failed_job_mailer/version"
+require "resque_failed_job_mailer"
 
 Gem::Specification.new do |s|
   s.name        = "resque-failed-job-mailer"
