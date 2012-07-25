@@ -1,0 +1,13 @@
+<p>
+  <strong>Worker: </strong>
+  <%= @notifier.worker %>
+</p>
+<strong> Exception: </strong>
+<p>
+  <%= @notifier.exception %>
+  <br/>
+  <% @notifier.exception.backtrace.each do |t| %>
+    <%= t %>
+    <br/>
+  <% end %>
+</p>
