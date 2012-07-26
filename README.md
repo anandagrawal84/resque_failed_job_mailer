@@ -49,4 +49,5 @@ end
 ```
 
 `config.mailer` is any class that extends `ActionMailer::Base`
+
 `config.mail` is mail in class given above in `config.mailer`
