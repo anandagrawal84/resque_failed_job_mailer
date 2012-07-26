@@ -1,4 +1,4 @@
-Overview
+Overview [![Build Status](https://secure.travis-ci.org/anandagrawal84/resque_failed_job_mailer.png?branch=master)](http://travis-ci.org/anandagrawal84/resque_failed_job_mailer)
 --------
 
 The resque-failed-job-mailer gem is used to send email along with whole exception backtrace whenever there is any failure in resque job.
