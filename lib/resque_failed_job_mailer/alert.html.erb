@@ -1,7 +1,17 @@
 <p>
+  <strong>Queue: </strong>
+  <%= @notifier.queue %>
+</p>
+<p>
   <strong>Worker: </strong>
   <%= @notifier.worker %>
 </p>
+<% if @notifier.class.include_payload %>
+<p>
+  <strong>Payload: </strong>
+  <%= @notifier.payload %>
+</p>
+<% end %>
 <strong> Exception: </strong>
 <p>
   <%= @notifier.exception %>
