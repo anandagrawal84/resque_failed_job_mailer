@@ -15,9 +15,6 @@
 <strong> Exception: </strong>
 <p>
   <%= @notifier.exception %>
-  <br/>
-  <% @notifier.exception.backtrace.each do |t| %>
-    <%= t %>
-    <br/>
-  <% end %>
+  <pre><% @notifier.exception.backtrace.each do |t| %><%= t %>
+<% end %></pre>
 </p>
