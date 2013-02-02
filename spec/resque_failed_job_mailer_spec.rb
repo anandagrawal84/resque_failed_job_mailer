@@ -30,6 +30,10 @@ describe Resque::Failure::Notifier do
     it "should return recipient address" do
       Resque::Failure::Notifier.to.should == "dummy@dummy.com"
     end
+
+    it "should return default include_payload method" do
+      Resque::Failure::Notifier.include_payload.should be_true
+    end
   end
 
   describe "save" do

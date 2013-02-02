@@ -8,6 +8,7 @@ module Resque
 
         def configure
           yield self
+          self.include_payload = true if include_payload.nil?
           Resque::Failure.backend = self unless Resque::Failure.backend == Resque::Failure::Multiple
         end
       end
